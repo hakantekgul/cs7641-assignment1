@@ -60,7 +60,6 @@ def tuned_svm_classifier(X_train,y_train,X_test,y_test,kernel,gamma,plotting):
 	print('Accuracy for Tuned SVM classifier is ' + str(accuracy_score(y_test,y_pred)))
 	print('Training time for Tuned SVM classifier: ' + str(train_time) + ' seconds')
 	print('Testing time for Tuned SVM classifier: ' + str(endt-stt) + ' seconds')
-	print('Best parameters: ' + str(clf.best_params_))
 	print()
 	return clf.best_params_
 
@@ -115,7 +114,6 @@ def tuned_dtree_classifier(X_train,y_train,X_test,y_test,plotting):
 	print('Accuracy for Tuned Decision Tree classifier is ' + str(accuracy_score(y_test,y_pred)))
 	print('Training time for Tuned Decision Tree classifier: ' + str(train_time) + ' seconds')
 	print('Testing time for Tuned Decision Tree classifier: ' + str(endt-stt) + ' seconds')
-	print('Best parameters: ' + str(clf.best_params_))
 	print()
 	return clf.best_params_
 
@@ -165,7 +163,6 @@ def tuned_knn_classifier(X_train,y_train,X_test,y_test,neighbors,plotting):
 	print('Accuracy for Tuned KNN classifier is ' + str(accuracy_score(y_test,y_pred)))
 	print('Training time for Tuned KNN classifier: ' + str(train_time) + ' seconds')
 	print('Testing time for Tuned KNN classifier: ' + str(endt-stt) + ' seconds')
-	print('Best parameters: ' + str(clf.best_params_))
 	print()
 	return clf.best_params_
 
@@ -191,7 +188,6 @@ def tuned_weighted_knn_classifier(X_train,y_train,X_test,y_test,neighbors,plotti
 	print('Accuracy for Tuned Weighted KNN classifier is ' + str(accuracy_score(y_test,y_pred)))
 	print('Training time for Tuned Weighed KNN classifier: ' + str(train_time) + ' seconds')
 	print('Testing time for Tuned Weighed KNN classifier: ' + str(endt-stt) + ' seconds')
-	print('Best parameters: ' + str(clf.best_params_))
 	print()
 	return clf.best_params_
 
@@ -263,7 +259,6 @@ def tuned_neural_net(X_train,y_train,X_test,y_test,learning_rate,plotting):
 	print('Accuracy for Tuned Neural Network is ' + str(accuracy_score(y_test,y_pred)))
 	print('Training time for Tuned NN: ' + str(train_time) + ' seconds')
 	print('Testing time for Tuned NN: ' + str(endt-stt) + ' seconds')
-	print('Best parameters: ' + str(clf.best_params_))
 	print()
 	return clf.best_params_
 
